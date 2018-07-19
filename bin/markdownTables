@@ -1,0 +1,3 @@
+#! /usr/bin/env node
+const markdownTables = require("../src/index.js").markdownTablesCli
+markdownTables(process.argv[2], process.argv[3])
