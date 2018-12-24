@@ -1,2 +1,14 @@
-node_modules
+
+# dependencies
+/node_modules
+
+# testing
+coverage
+.nyc_output
+.vscode
+
+# misc
 .DS_Store
+
+# local logs
+npm-debug.log*
