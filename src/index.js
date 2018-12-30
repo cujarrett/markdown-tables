@@ -70,12 +70,7 @@ module.exports.markdownTables = async (input, outputPath) => {
     const columnWidths = this.getAllColumnWidths(columns)
     let output = ""
 
-    for (const rowIndex of table.keys()) {
-      console.log("table.length")
-      console.log(table.length)
-      console.log("table.keys()")
-      console.log(table.keys())
-
+    for (let rowIndex = 0; rowIndex < table.length + 1; rowIndex++) {
       const headerRow = rowIndex === 1
       if (headerRow) {
         output += this.getHeaderLineBreak(columnWidths)
@@ -103,5 +98,6 @@ module.exports.markdownTables = async (input, outputPath) => {
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log(error)
+    throw error
   }
 }
