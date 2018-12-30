@@ -1,31 +1,34 @@
-workflow "New workflow" {
+workflow "CI/CD Pipeline" {
   on = "push"
   resolves = [
-    "GitHub Action for npm-2",
-    "GitHub Action for npm-3",
+    "Lint Code",
+    "Get Code Coverage",
   ]
 }
 
-action "GitHub Action for npm" {
+action "Install Dependencies" {
   uses = "actions/npm@e7aaefe"
   args = "install && npm install -g codecov"
 }
 
-action "GitHub Action for npm-1" {
+action "Run Tests" {
   uses = "actions/npm@e7aaefe"
-  needs = ["GitHub Action for npm"]
   args = "run test"
+  needs = ["Install Dependencies"]
 }
 
-action "GitHub Action for npm-2" {
+action "Lint Code" {
   uses = "actions/npm@e7aaefe"
-  needs = ["GitHub Action for npm"]
   args = "run lint"
+  needs = ["Install Dependencies"]
 }
 
-action "GitHub Action for npm-3" {
+action "Get Code Coverage" {
   uses = "actions/npm@e7aaefe"
-  needs = ["GitHub Action for npm-1", "GitHub Action for npm-2"]
+  needs = [
+    "Lint Code",
+    "Run Tests",
+  ]
   args = "run codecov"
   secrets = ["CODECOV_TOKEN"]
 }
