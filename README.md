@@ -7,7 +7,7 @@
 
 ## What & Why
 
-Convert csv data into markdown tables friendly for GitHub or GitLab.
+Convert Excel (.xlsx) data into markdown tables friendly for GitHub or GitLab.
 
 ## Use
 There are two ways to use Markdown Tables. You can use it in a Node JS
@@ -41,13 +41,13 @@ npm install markdown-tables --save
 ```
 const markdownTables = require("markdown-tables")
 ...
-const markdownTable = markdownTables(csvData)
+const markdownTable = markdownTables(xlsxFilePath)
 ```
 
 **Using via command line with markdown-tables installed globally**
 ```
 npm install -g markdown-tables
-markdownTables ./<path to input csv>/input.csv ./out.md
+markdownTables ./<path to input file>/input.xlsx ./out.md
 ```
 
 ## Want to contribute to Markdown Tables?

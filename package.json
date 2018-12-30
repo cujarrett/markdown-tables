@@ -8,30 +8,34 @@
     "ci": "npm run lint && npm run test",
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
-    "test": "node test/index.js | node_modules/.bin/tap-spec"
+    "test": "nyc --reporter=lcov tape test/**/*.js | tap-spec && nyc report"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matt-jarrett/markdown-tables.git"
+    "url": "git+https://github.com/cujarrett/markdown-tables.git"
   },
   "keywords": [
-    "csv",
+    "excel",
     "md",
     "markdown",
     "github",
-    "gitlab"
+    "gitlab",
+    "tables",
+    "table"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matt-jarrett/markdown-tables/issues"
+    "url": "https://github.com/cujarrett/markdown-tables/issues"
   },
-  "homepage": "https://github.com/matt-jarrett/markdown-tables#readme",
+  "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
-    "csv-parse": "~2.5.0"
+    "xlsx": "~0.14.1"
   },
   "devDependencies": {
-    "eslint": "~5.1.0",
+    "eslint": "~5.11.0",
+    "lodash": "~4.17.11",
+    "nyc": "~13.1.0",
     "tap-spec": "~5.0.0",
-    "tape": "~4.9.1"
+    "tape-async": "~2.3.0"
   }
 }
