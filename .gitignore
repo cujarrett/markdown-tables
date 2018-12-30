@@ -6,7 +6,7 @@
 coverage
 .nyc_output
 .vscode
-/test/test-output.md
+test/test-output.md
 
 # misc
 .DS_Store
