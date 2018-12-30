@@ -14,13 +14,13 @@ action "GitHub Action for npm" {
 action "GitHub Action for npm-1" {
   uses = "actions/npm@e7aaefe"
   needs = ["GitHub Action for npm"]
-  args = "lint"
+  args = "run test"
 }
 
 action "GitHub Action for npm-2" {
   uses = "actions/npm@e7aaefe"
   needs = ["GitHub Action for npm"]
-  args = "test"
+  args = "run lint"
 }
 
 action "GitHub Action for npm-3" {
