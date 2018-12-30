@@ -26,6 +26,6 @@ action "GitHub Action for npm-2" {
 action "GitHub Action for npm-3" {
   uses = "actions/npm@e7aaefe"
   needs = ["GitHub Action for npm-1", "GitHub Action for npm-2"]
-  args = "codecov"
+  args = "run codecov"
   secrets = ["CODECOV_TOKEN"]
 }
