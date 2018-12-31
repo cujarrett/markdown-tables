@@ -2,7 +2,7 @@ workflow "CI/CD Pipeline" {
   on = "push"
   resolves = [
     "Run Tests",
-    "GitHub Action for npm",
+    "Publish to NPM",
   ]
 }
 
@@ -29,7 +29,7 @@ action "Filter for Master branch" {
   args = "branch master"
 }
 
-action "GitHub Action for npm" {
+action "Publish to NPM" {
   uses = "actions/npm@e7aaefe"
   needs = ["Filter for Master branch"]
   args = "publish --access public"
