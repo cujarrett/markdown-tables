@@ -13,7 +13,7 @@ action "Install Dependencies" {
 
 action "Run Tests" {
   uses = "actions/npm@e7aaefe"
-  args = "run test && codecov"
+  args = "run test"
   needs = ["Install Dependencies"]
 }
 
