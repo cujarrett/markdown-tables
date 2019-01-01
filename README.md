@@ -13,7 +13,7 @@ Convert Excel (.xlsx) data into markdown tables friendly for GitHub or GitLab.
 There are two ways to use Markdown Tables. You can use it in a Node JS
 project or you can use it directly via the command line.
 
-Sample input csv data:
+Sample input Excel (.xlsx) data:
 ```
 Label,Square Footage,Color
 Office,224,Blue
