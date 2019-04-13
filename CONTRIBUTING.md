@@ -7,7 +7,7 @@ If you're new to contributing to open source software
 A great place to jump in are issues labeled [Beginner Friendly](https://github.com/cujarrett/markdown-tables/labels/Beginner%20Friendly).
 
 ## Chat
-Feel free to join the [markdown-tables Discord](https://discord.gg/fMFGUkR) if you have questions.
+Feel free to join the [markdown-tables Discord](https://discord.gg/2pw75YQ) if you have questions.
 
 ## Pull Request Checklist
 - [ ] - 100% code coverage with thoughtful unit, integration, and end to end tests
