@@ -1,7 +1,7 @@
 {
   "name": "markdown-tables",
   "author": "Matt Jarrett",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Helping the world move Excel table data into Markdown tables",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
     "test": "nyc --reporter=lcov tape test/**/*.js | tap-spec && nyc report"
+  },
+  "bin": {
+    "markdown-tables": "./bin/markdown-tables"
   },
   "repository": {
     "type": "git",

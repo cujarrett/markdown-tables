@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1] - 2019-06-02
+### Added
+- Missing bin spec in package.json for semlink
+
 ## [v2.0.0] - 2018-12-24
 ### Added
 - support for .xlsx to markdown table creation
@@ -35,4 +39,5 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 - initial release :tada:
 
+[v2.0.1]: https://github.com/cujarrett/markdown-tables/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/cujarrett/markdown-tables/releases/tag/v2.0.0

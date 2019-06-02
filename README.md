@@ -47,7 +47,7 @@ const markdownTable = markdownTables(xlsxFilePath)
 **Using via command line with markdown-tables installed globally**
 ```
 npm install -g markdown-tables
-markdownTables ./<path to input file>/input.xlsx ./out.md
+markdown-tables ./<path to input file>/input.xlsx ./out.md
 ```
 
 ## Want to contribute to Markdown Tables?
