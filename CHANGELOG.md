@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.4] - 2019-07-09
+### Changed
+- Updated dependencies
+
 ## [v2.0.3] - 2019-07-09
 ### Fixed
 - Path in command line interface use
