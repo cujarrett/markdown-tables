@@ -47,7 +47,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 - initial release :tada:
 
-[v2.0.3]: https://github.com/cujarrett/markdown-tables/compare/v2.0.1...v2.0.3
+[v2.0.3]: https://github.com/cujarrett/markdown-tables/compare/v2.0.2...v2.0.3
 [v2.0.2]: https://github.com/cujarrett/markdown-tables/compare/v2.0.1...v2.0.2
 [v2.0.1]: https://github.com/cujarrett/markdown-tables/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/cujarrett/markdown-tables/releases/tag/v2.0.0
