@@ -36,6 +36,7 @@ jobs:
     docker:
       - image: circleci/node:lts
     steps:
+      - checkout
       - run:
           name: Find files
           command: ls -la
