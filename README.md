@@ -1,7 +1,7 @@
 ![markdown-tables-logo](./media/markdown-tables-logo.png)
 
 <p align="center">
-  <a href="https://circleci.com/gh/cujarrett/glimpse/tree/master"><img alt="Circle CI" src="https://circleci.com/gh/cujarrett/glimpse/tree/master.svg?style=svg"></a>
+  <a href="https://circleci.com/gh/cujarrett/markdown-tables/tree/master"><img alt="Circle CI" src="https://circleci.com/gh/cujarrett/markdown-tables/tree/master.svg?style=svg"></a>
   <a href="https://www.npmjs.com/package/markdown-tables"><img alt="npm" src="https://img.shields.io/npm/dt/markdown-tables.svg"></a>
 </p>
 
