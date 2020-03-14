@@ -3,6 +3,7 @@ version: 2.1
 jobs:
 
   build:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
@@ -16,6 +17,7 @@ jobs:
             - node_modules
 
   test:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
@@ -33,11 +35,12 @@ jobs:
           command: npm run test
 
   deploy:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
       - attach_workspace:
-          at: ~/temp
+          at: ~/repo
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
