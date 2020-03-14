@@ -37,8 +37,11 @@ jobs:
       - image: circleci/node:lts
     steps:
       - run:
+          name: Find files
+          command: ls -la
+      - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc
       - run:
           name: Publish package
           command: npm publish
