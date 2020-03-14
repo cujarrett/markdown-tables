@@ -1,9 +1,9 @@
-# markdown-tables
-
 ![markdown-tables-logo](./media/markdown-tables-logo.png)
 
-[![Build Status](https://travis-ci.org/cujarrett/markdown-tables.svg?branch=master)](https://travis-ci.org/cujarrett/markdown-tables)
-[![npm](https://img.shields.io/npm/dt/markdown-tables.svg)](https://www.npmjs.com/package/markdown-tables)
+<p align="center">
+  <a href="https://circleci.com/gh/cujarrett/glimpse/tree/master"><img alt="Circle CI" src="https://circleci.com/gh/cujarrett/glimpse/tree/master.svg?style=svg"></a>
+  <a href="https://www.npmjs.com/package/markdown-tables"><img alt="npm" src="https://img.shields.io/npm/dt/markdown-tables.svg"></a>
+</p>
 
 ## What & Why
 
