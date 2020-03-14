@@ -3,7 +3,6 @@ version: 2.1
 jobs:
 
   build:
-    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
@@ -17,7 +16,6 @@ jobs:
             - node_modules
 
   test:
-    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
@@ -35,7 +33,6 @@ jobs:
           command: npm run test
 
   deploy:
-    working_directory: ~/repo
     docker:
       - image: circleci/node:lts
     steps:
