@@ -1,0 +1,62 @@
+version: 2.1
+
+jobs:
+
+  build:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run:
+          name: Install & Cache Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  test:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Audit Dependencies
+          command: npm audit
+      - run:
+          name: Lint Code
+          command: npm run lint
+      - run:
+          name: Run Tests
+          command: npm run test
+
+  deploy:
+    docker:
+      - image: circleci/node:lts
+    working_directory: ~/temp
+    steps:
+      - attach_workspace:
+          at: ~/temp
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package
+          command: npm publish
+
+workflows:
+  version: 2
+  cicd:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
