@@ -3,10 +3,13 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.5] - 2020-03-13
+## [v2.1.0] - 2020-03-13
+### Added
+- :sparkles: CircleCI CI/CD pipeline
+
 ### Changed
 - :lock: Updated dependencies
--
+
 ## [v2.0.4] - 2019-07-09
 ### Changed
 - :lock: Updated dependencies
