@@ -1,7 +1,7 @@
 {
   "name": "markdown-tables",
   "author": "Matt Jarrett",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Helping the world move Excel table data into Markdown tables",
   "main": "src/index.js",
   "scripts": {
@@ -32,12 +32,12 @@
   },
   "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
-    "xlsx": "~0.15.6"
+    "xlsx": "~0.16.4"
   },
   "devDependencies": {
-    "eslint": "~6.8.0",
-    "lodash": "~4.17.15",
-    "nyc": "~15.0.0",
+    "eslint": "~7.5.0",
+    "lodash": "~4.17.19",
+    "nyc": "~15.1.0",
     "tap-spec": "~5.0.0",
     "tape-async": "~2.3.0"
   }

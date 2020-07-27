@@ -3,20 +3,24 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.0] - 2020-07-26
+### Changed
+- :arrow_up: Updated dependencies
+
 ## [v2.1.1] - 2020-03-26
 ### Changed
-- :lock: Updated dependencies
+- :arrow_up: Updated dependencies
 
 ## [v2.1.0] - 2020-03-13
 ### Added
 - :sparkles: CircleCI CI/CD pipeline
 
 ### Changed
-- :lock: Updated dependencies
+- :arrow_up: Updated dependencies
 
 ## [v2.0.4] - 2019-07-09
 ### Changed
-- :lock: Updated dependencies
+- :arrow_up: Updated dependencies
 
 ## [v2.0.3] - 2019-07-09
 ### Fixed
@@ -24,7 +28,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [v2.0.2] - 2019-07-08
 ### Changed
-- :lock: Updated dependencies
+- :arrow_up: Updated dependencies
 
 ## [v2.0.1] - 2019-06-02
 ### Fixed
@@ -62,6 +66,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 - :tada: Initial release :tada:
 
+[v2.2.0]: https://github.com/cujarrett/markdown-tables/compare/v2.1.1...v2.2.0
 [v2.1.1]: https://github.com/cujarrett/markdown-tables/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/cujarrett/markdown-tables/compare/v2.0.4...v2.1.0
 [v2.0.4]: https://github.com/cujarrett/markdown-tables/compare/v2.0.3...v2.0.4
