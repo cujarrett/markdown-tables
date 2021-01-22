@@ -1,3 +1,14 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+# [2.3.0](https://github.com/cujarrett/markdown-tables/compare/v2.2.0...v2.3.0) (2021-01-22)
+
+
+### Features
+
+* **ci/cd:** adds semantic-release ([382f6f4](https://github.com/cujarrett/markdown-tables/commit/382f6f4304adca62d17e4ef63969a066ee569cd8))
+
 ## [v2.2.0] - 2020-07-26
 ### Changed
 - :arrow_up: Updated dependencies
