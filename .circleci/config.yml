@@ -72,11 +72,11 @@ workflows:
           filters:
             branches:
               ignore:
-                - master
+                - main
       - release:
           requires:
             - test
           filters:
             branches:
               only:
-                - master
+                - main
