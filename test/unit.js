@@ -25,7 +25,7 @@ tape("unit tests", async (assert) => {
     "‘Header 4’": "Great",
     "Header-2_1": "Gifs make me smile"
   }]
-  actual = await markdownTables.getInput("./test/test-input.xlsx")
+  actual = await markdownTables.getInput("./test/normal-test-input.xlsx")
   assert.true(isEqual(actual, expected), "`getInput` test")
 
   const mockInput = [{
