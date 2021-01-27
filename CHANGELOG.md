@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.1](https://github.com/cujarrett/markdown-tables/compare/v2.4.0...v2.4.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* empty cell bug ([488107f](https://github.com/cujarrett/markdown-tables/commit/488107ff8d6c9fc012158fd02b4e37d1314841cd))
+
 # [2.4.0](https://github.com/cujarrett/markdown-tables/compare/v2.3.0...v2.4.0) (2021-01-25)
 
 
