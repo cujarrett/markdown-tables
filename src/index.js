@@ -10,13 +10,22 @@ module.exports.getInput = async (filePath, sheetNumber = 0) => {
 }
 
 module.exports.getColumns = (data) => {
+  let headers = []
   const columns = []
-  const headers = Object.keys(data[0])
+  let maxRowLength = 0
+
+  for (const rowItems of data) {
+    if (Object.keys(rowItems).length > maxRowLength) {
+      headers = [...Object.keys(rowItems)]
+      maxRowLength = Object.keys(rowItems).length
+    }
+  }
 
   for (const header of headers) {
     const column = [header]
     for (const row of data) {
-      column.push(row[header])
+      const value = row[header] || ""
+      column.push(value)
     }
     columns.push(column)
   }

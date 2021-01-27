@@ -7,6 +7,8 @@ coverage
 .nyc_output
 .vscode
 test/test-output.md
+test/empty-data-row-test-output.md
+test/normal-test-output.md
 
 # misc
 .DS_Store
