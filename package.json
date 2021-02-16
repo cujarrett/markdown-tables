@@ -1,7 +1,7 @@
 {
   "name": "markdown-tables",
   "author": "Matt Jarrett",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Helping the world move Excel table data into Markdown tables",
   "main": "src/index.js",
   "scripts": {

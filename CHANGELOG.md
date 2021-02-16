@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.4](https://github.com/cujarrett/markdown-tables/compare/v2.4.3...v2.4.4) (2021-02-16)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint from 7.18.0 to 7.20.0 ([94f7b1e](https://github.com/cujarrett/markdown-tables/commit/94f7b1e6b0ea8eac379b4d274ebf9540694d66d2))
+
 ## [2.4.3](https://github.com/cujarrett/markdown-tables/compare/v2.4.2...v2.4.3) (2021-02-16)
 
 
