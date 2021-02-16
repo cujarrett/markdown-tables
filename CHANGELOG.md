@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.3](https://github.com/cujarrett/markdown-tables/compare/v2.4.2...v2.4.3) (2021-02-16)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.9 ([13b5d06](https://github.com/cujarrett/markdown-tables/commit/13b5d069746a4b6c5956d7dacfbb0322b214fd4e))
+
 ## [2.4.2](https://github.com/cujarrett/markdown-tables/compare/v2.4.1...v2.4.2) (2021-02-04)
 
 
