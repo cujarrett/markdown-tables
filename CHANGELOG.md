@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [2.5.0](https://github.com/cujarrett/markdown-tables/compare/v2.4.7...v2.5.0) (2021-02-24)
+
+
+### Features
+
+* updates dependabot frequency ([3f69220](https://github.com/cujarrett/markdown-tables/commit/3f69220c948a6ba69bcf08b141ab0ce400dca047))
+
 ## [2.4.7](https://github.com/cujarrett/markdown-tables/compare/v2.4.6...v2.4.7) (2021-02-24)
 
 
