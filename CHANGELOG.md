@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.7](https://github.com/cujarrett/markdown-tables/compare/v2.4.6...v2.4.7) (2021-02-24)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([50b104c](https://github.com/cujarrett/markdown-tables/commit/50b104c7704eacc6199efc107963103948478067))
+
 ## [2.4.6](https://github.com/cujarrett/markdown-tables/compare/v2.4.5...v2.4.6) (2021-02-24)
 
 
