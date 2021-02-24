@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.5](https://github.com/cujarrett/markdown-tables/compare/v2.4.4...v2.4.5) (2021-02-24)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump lodash from 4.17.20 to 4.17.21 ([bff5a2f](https://github.com/cujarrett/markdown-tables/commit/bff5a2f986707787d8476b23aa0bc36f4632304a))
+
 ## [2.4.4](https://github.com/cujarrett/markdown-tables/compare/v2.4.3...v2.4.4) (2021-02-16)
 
 
