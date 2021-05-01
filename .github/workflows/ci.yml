@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: node --version
+      - run: npm --version
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
+      - uses: oke-py/npm-audit-action@v1.7.1
