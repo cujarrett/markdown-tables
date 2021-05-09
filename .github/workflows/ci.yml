@@ -16,4 +16,5 @@ jobs:
       - run: npm install
       - run: npm run lint
       - run: npm test
+      - run: npm audit
       - uses: oke-py/npm-audit-action@v1.7.1
