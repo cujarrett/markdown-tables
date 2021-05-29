@@ -1,17 +1,19 @@
-name: CI
+name: ci
 on:
   - push
   - pull_request
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: node --version
-      - run: npm --version
-      - run: npm install
+      - name: Install dependencies
+        run: npm ci
+      - name: Audit dependencies
       - run: npm audit
+      - name: Lint project
       - run: npm run lint
+      - name: Run unit and integration tests
       - run: npm test
