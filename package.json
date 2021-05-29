@@ -40,11 +40,11 @@
   },
   "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
-    "xlsx": "~0.16.9"
+    "xlsx": "~0.17.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "~12.1.1",
-    "@commitlint/config-conventional": "~12.1.1",
+    "@commitlint/cli": "~12.1.4",
+    "@commitlint/config-conventional": "~12.1.4",
     "@semantic-release/changelog": "~5.0.1",
     "@semantic-release/commit-analyzer": "~8.0.1",
     "@semantic-release/exec": "~5.0.0",
@@ -54,12 +54,12 @@
     "@semantic-release/release-notes-generator": "~9.0.2",
     "commitizen": "~4.2.4",
     "cz-conventional-changelog": "~3.3.0",
-    "eslint": "~7.25.0",
+    "eslint": "~7.27.0",
     "husky": "~4.3.8",
     "lodash": "~4.17.21",
     "nyc": "~15.1.0",
-    "semantic-release": "~17.4.2",
-    "tap-spec": "~5.0.0",
+    "semantic-release": "~17.4.3",
+    "tap-spec": "~2.2.2",
     "tape-async": "~2.3.0"
   },
   "husky": {
