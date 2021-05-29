@@ -2,6 +2,19 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [2.7.0](https://github.com/cujarrett/markdown-tables/compare/v2.6.3...v2.7.0) (2021-05-29)
+
+
+### Bug Fixes
+
+* github actions ([#56](https://github.com/cujarrett/markdown-tables/issues/56)) ([cc06d36](https://github.com/cujarrett/markdown-tables/commit/cc06d36f0261dbca601cfece54eb0e3b358bf10a))
+
+
+### Features
+
+* Migrate back to circleci ([#57](https://github.com/cujarrett/markdown-tables/issues/57)) ([5a9970c](https://github.com/cujarrett/markdown-tables/commit/5a9970c88b03e5dc21780e826f9988265b409c35))
+* migrates to GitHub Actions ([#55](https://github.com/cujarrett/markdown-tables/issues/55)) ([557af3c](https://github.com/cujarrett/markdown-tables/commit/557af3ce815b4a834de800937111e6b1b16f9634))
+
 ## [2.6.3](https://github.com/cujarrett/markdown-tables/compare/v2.6.2...v2.6.3) (2021-05-08)
 
 
