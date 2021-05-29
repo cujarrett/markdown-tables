@@ -9,11 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - name: Install dependencies
-        run: npm ci
-      - name: Audit dependencies
+      - run: npm install
       - run: npm audit
-      - name: Lint project
       - run: npm run lint
-      - name: Run unit and integration tests
       - run: npm test
