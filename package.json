@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
     "test": "nyc --reporter=lcov tape test/**/*.js | tap-spec && nyc report",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "contributors": [
     {
@@ -51,15 +52,15 @@
     "@semantic-release/git": "~9.0.0",
     "@semantic-release/github": "~7.2.3",
     "@semantic-release/npm": "~7.1.3",
-    "@semantic-release/release-notes-generator": "~9.0.2",
+    "@semantic-release/release-notes-generator": "~9.0.3",
     "commitizen": "~4.2.4",
     "cz-conventional-changelog": "~3.3.0",
-    "eslint": "~7.27.0",
-    "husky": "~4.3.8",
+    "eslint": "~7.30.0",
+    "husky": "~7.0.1",
     "lodash": "~4.17.21",
     "nyc": "~15.1.0",
-    "semantic-release": "~17.4.3",
-    "tap-spec": "~2.2.2",
+    "semantic-release": "~17.4.4",
+    "tap-spec": "~5.0.0",
     "tape-async": "~2.3.0"
   },
   "husky": {
