@@ -21,7 +21,7 @@ npm install -g markdown-tables
 markdown-tables ./path/to/input/file.xlsx ./output.md
 ```
 
-![demo](https://user-images.githubusercontent.com/16245634/126057807-f0d47411-d249-4adb-80ec-29292f5e250f.gif)
+![demo](https://user-images.githubusercontent.com/16245634/126058164-048b63f0-7dce-445e-a0c5-8d53956b2bea.gif)
 
 ### Use via Node JS project
 
