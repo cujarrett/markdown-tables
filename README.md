@@ -15,27 +15,18 @@ Convert Excel (.xlsx) data into markdown tables friendly for GitHub or GitLab.
 There are two ways to use Markdown Tables. You can use it in a Node JS
 project or you can use it directly via the command line.
 
-Sample input Excel (.xlsx) data:
+### Use via command line
 ```
-Label,Square Footage,Color
-Office,224,Blue
-Kitchen,230,Green
-Clothes Closet,45,Yellow
-Storage Closet,56,Red
+npm install -g markdown-tables
+markdown-tables ./path/to/input/file.xlsx ./output.md
 ```
 
-Sample output md data:
-```
-| Label          | Square Footage | Color  |
-|----------------|----------------|--------|
-| Office         | 224            | Blue   |
-| Kitchen        | 230            | Green  |
-| Clothes Closet | 45             | Yellow |
-| Storage Closet | 56             | Red    |
-```
+![demo](https://user-images.githubusercontent.com/16245634/126057807-f0d47411-d249-4adb-80ec-29292f5e250f.gif)
 
-**Using via a Node JS project**
+### Use via Node JS project
+
 - Adding markdown-tables to your Node project for use
+
 ```
 npm install markdown-tables --save
 ```
@@ -44,12 +35,6 @@ npm install markdown-tables --save
 const markdownTables = require("markdown-tables")
 ...
 const markdownTable = markdownTables(xlsxFilePath)
-```
-
-**Using via command line with markdown-tables installed globally**
-```
-npm install -g markdown-tables
-markdown-tables ./<path to input file>/input.xlsx ./out.md
 ```
 
 ## Want to contribute to Markdown Tables?
