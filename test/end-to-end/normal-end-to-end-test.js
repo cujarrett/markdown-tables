@@ -1,11 +1,9 @@
 const fs = require("fs")
-const tape = require("tape-async")
+const test = require("ava")
 const util = require("util")
-const { markdownTables } = require("../src/index.js")
+const { markdownTables } = require("../../src/index.js")
 
-tape("markdown-tables normal file end to end use test", async (assert) => {
-  assert.plan(2)
-
+test("End to End - normal", async (assert) => {
   // eslint-disable-next-line max-len
   const expected = `| Header 1  | Header-2      | “Header 3”          | ‘Header 4’       | Header-2_1         |
 |-----------|---------------|---------------------|------------------|--------------------|
@@ -14,13 +12,12 @@ tape("markdown-tables normal file end to end use test", async (assert) => {
 | 11        | Header-2      | Sharks;Birds;People | Great            | Gifs make me smile |
 `
 
-  let actual = await markdownTables("./test/normal-test-input.xlsx")
-  assert.equal(actual, expected, "Converts .xslx to .md table as expected")
+  let actual = await markdownTables("./test/data/normal-test-input.xlsx")
+  assert.is(actual, expected, "Converts .xslx to .md table as expected")
 
-  await markdownTables("./test/normal-test-input.xlsx", "./test/normal-test-output.md")
+  await markdownTables("./test/data/normal-test-input.xlsx", "./test/data/normal-test-output.md")
   const read = util.promisify(fs.readFile)
-  actual = await read("./test/normal-test-output.md")
+  actual = await read("./test/data/normal-test-output.md")
   actual = actual.toString()
-  assert.equal(actual, expected, "Converts .xslx to .md table via command line as expected")
-  assert.end()
+  assert.is(actual, expected)
 })
