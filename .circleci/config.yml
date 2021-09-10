@@ -24,7 +24,7 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Audit Dependencies
-          command: npm audit
+          command: npm audit --production
       - run:
           name: Lint Code
           command: npm run lint

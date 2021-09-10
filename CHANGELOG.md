@@ -2,6 +2,75 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.5](https://github.com/cujarrett/markdown-tables/compare/v2.9.4...v2.9.5) (2021-08-02)
+
+
+### Bug Fixes
+
+* moves dependency updates from fix to deps ([567c9c6](https://github.com/cujarrett/markdown-tables/commit/567c9c63c2b029d4942ef0a1c2d2129ba044a7a0))
+
+## [2.9.4](https://github.com/cujarrett/markdown-tables/compare/v2.9.3...v2.9.4) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 12.1.4 to 13.1.0 ([#67](https://github.com/cujarrett/markdown-tables/issues/67)) ([9017608](https://github.com/cujarrett/markdown-tables/commit/90176089e3e31f9d50a8f261e575c8c3963c5cb5))
+
+## [2.9.3](https://github.com/cujarrett/markdown-tables/compare/v2.9.2...v2.9.3) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint from 7.30.0 to 7.32.0 ([#66](https://github.com/cujarrett/markdown-tables/issues/66)) ([81ac4ea](https://github.com/cujarrett/markdown-tables/commit/81ac4eab8e5d378a69465972949955c844ea7928))
+
+## [2.9.2](https://github.com/cujarrett/markdown-tables/compare/v2.9.1...v2.9.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([#65](https://github.com/cujarrett/markdown-tables/issues/65)) ([02d28b3](https://github.com/cujarrett/markdown-tables/commit/02d28b3be47e669f3ee3960150be19f63350fc89))
+
+## [2.9.1](https://github.com/cujarrett/markdown-tables/compare/v2.9.0...v2.9.1) (2021-07-22)
+
+
+### Bug Fixes
+
+* migrate to ava for tests ([#64](https://github.com/cujarrett/markdown-tables/issues/64)) ([66df275](https://github.com/cujarrett/markdown-tables/commit/66df2755df60a11ca0b7b7292d01ba3fceba28ff))
+
+# [2.9.0](https://github.com/cujarrett/markdown-tables/compare/v2.8.0...v2.9.0) (2021-07-18)
+
+
+### Features
+
+* updates docs ([00fd4d0](https://github.com/cujarrett/markdown-tables/commit/00fd4d071bf4881929920c0cf6a41fb34c650575))
+
+# [2.8.0](https://github.com/cujarrett/markdown-tables/compare/v2.7.1...v2.8.0) (2021-07-18)
+
+
+### Features
+
+* updates docs ([0e4bcae](https://github.com/cujarrett/markdown-tables/commit/0e4bcaeef6ba4ec9db811515facec10e1c1fedb1))
+
+## [2.7.1](https://github.com/cujarrett/markdown-tables/compare/v2.7.0...v2.7.1) (2021-07-12)
+
+
+### Bug Fixes
+
+* updates dependencies ([#63](https://github.com/cujarrett/markdown-tables/issues/63)) ([f7abdac](https://github.com/cujarrett/markdown-tables/commit/f7abdac5848675c11a3848fef53f6daff6760df8))
+
+# [2.7.0](https://github.com/cujarrett/markdown-tables/compare/v2.6.3...v2.7.0) (2021-05-29)
+
+
+### Bug Fixes
+
+* github actions ([#56](https://github.com/cujarrett/markdown-tables/issues/56)) ([cc06d36](https://github.com/cujarrett/markdown-tables/commit/cc06d36f0261dbca601cfece54eb0e3b358bf10a))
+
+
+### Features
+
+* Migrate back to circleci ([#57](https://github.com/cujarrett/markdown-tables/issues/57)) ([5a9970c](https://github.com/cujarrett/markdown-tables/commit/5a9970c88b03e5dc21780e826f9988265b409c35))
+* migrates to GitHub Actions ([#55](https://github.com/cujarrett/markdown-tables/issues/55)) ([557af3c](https://github.com/cujarrett/markdown-tables/commit/557af3ce815b4a834de800937111e6b1b16f9634))
+
 ## [2.6.3](https://github.com/cujarrett/markdown-tables/compare/v2.6.2...v2.6.3) (2021-05-08)
 
 

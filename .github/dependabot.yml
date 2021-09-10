@@ -6,5 +6,5 @@ updates:
     interval: monthly
     time: "11:00"
   commit-message:
-      prefix: "fix"
+      prefix: "deps"
       include: "scope"
