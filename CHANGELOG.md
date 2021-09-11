@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.6](https://github.com/cujarrett/markdown-tables/compare/v2.9.5...v2.9.6) (2021-09-11)
+
+
+### Bug Fixes
+
+* updates dependencies ([cccd00b](https://github.com/cujarrett/markdown-tables/commit/cccd00b002fb2f6e10206e29b40e37bd4c1ae798))
+* updates dependencies ([26307ca](https://github.com/cujarrett/markdown-tables/commit/26307cac1cd63ff974e427c1a2f44d00315086da))
+
 ## [2.9.5](https://github.com/cujarrett/markdown-tables/compare/v2.9.4...v2.9.5) (2021-08-02)
 
 
