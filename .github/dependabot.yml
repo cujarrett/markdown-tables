@@ -2,9 +2,3 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
-  schedule:
-    interval: monthly
-    time: "11:00"
-  commit-message:
-      prefix: "deps"
-      include: "scope"
