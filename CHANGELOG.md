@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.7](https://github.com/cujarrett/markdown-tables/compare/v2.9.6...v2.9.7) (2021-09-12)
+
+
+### Bug Fixes
+
+* updates dependabot settings ([9d63e2d](https://github.com/cujarrett/markdown-tables/commit/9d63e2d236200b04b75487bce18dca583508d725))
+
 ## [2.9.6](https://github.com/cujarrett/markdown-tables/compare/v2.9.5...v2.9.6) (2021-09-11)
 
 
