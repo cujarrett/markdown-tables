@@ -12,8 +12,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: npm ci
-      - run: npx semantic-release
+      - name: install dependencies
+      - run: npx ci
+      - name: install semantic-release extra plugins
+        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+      - name: lint
+        run: npm run lint
+      - name: test
+        run: npm run test
+      - name: build
+        run: npm run build
+      - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
