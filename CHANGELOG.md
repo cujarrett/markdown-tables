@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [2.10.0](https://github.com/cujarrett/markdown-tables/compare/v2.9.17...v2.10.0) (2021-10-01)
+
+
+### Bug Fixes
+
+* release ([422ea9f](https://github.com/cujarrett/markdown-tables/commit/422ea9f066bb188e7792ec9ea5ebe3e5d9259b86))
+* release ([1b01010](https://github.com/cujarrett/markdown-tables/commit/1b010106dee0083761976d3499dffeb15d5016ce))
+* release ([8cee79f](https://github.com/cujarrett/markdown-tables/commit/8cee79f67306a6ad1859e091f0ee1e5a920db3f9))
+* release ([#87](https://github.com/cujarrett/markdown-tables/issues/87)) ([67d7de5](https://github.com/cujarrett/markdown-tables/commit/67d7de5c6c6378d034edf7ccbb7c2d337009313b))
+* release ([#88](https://github.com/cujarrett/markdown-tables/issues/88)) ([eb06261](https://github.com/cujarrett/markdown-tables/commit/eb062611bf6c2d92a4d790277128e4c6124789b4))
+
+
+### Features
+
+* migrates to GitHub Actions ([#82](https://github.com/cujarrett/markdown-tables/issues/82)) ([fbc1c9e](https://github.com/cujarrett/markdown-tables/commit/fbc1c9e6c16d7b602286642aa3cca230d74ffb9b))
+
 ## [2.9.17](https://github.com/cujarrett/markdown-tables/compare/v2.9.16...v2.9.17) (2021-09-23)
 
 
