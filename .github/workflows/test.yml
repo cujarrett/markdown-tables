@@ -2,8 +2,8 @@ name: test
 
 on:
   push:
-    branches:
-      - "!main"
+    branches-ignore:
+      - main
   pull_request:
     types: [opened, reopened]
 
