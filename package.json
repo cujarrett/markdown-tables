@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
     "test": "nyc ava",
-    "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
   "contributors": [
@@ -41,16 +40,16 @@
   },
   "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
-    "xlsx": "~0.17.1"
+    "xlsx": "~0.17.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "~13.1.0",
-    "@commitlint/config-conventional": "~13.1.0",
+    "@commitlint/cli": "~13.2.0",
+    "@commitlint/config-conventional": "~13.2.0",
     "@semantic-release/changelog": "~6.0.0",
     "@semantic-release/commit-analyzer": "~9.0.1",
     "@semantic-release/exec": "~6.0.1",
     "@semantic-release/git": "~10.0.0",
-    "@semantic-release/github": "~8.0.0",
+    "@semantic-release/github": "~8.0.1",
     "@semantic-release/npm": "~8.0.0",
     "@semantic-release/release-notes-generator": "~10.0.2",
     "ava": "~3.15.0",
@@ -58,8 +57,7 @@
     "cz-conventional-changelog": "~3.3.0",
     "eslint": "~7.32.0",
     "husky": "~7.0.2",
-    "nyc": "~15.1.0",
-    "semantic-release": "~18.0.0"
+    "nyc": "~15.1.0"
   },
   "husky": {
     "hooks": {
