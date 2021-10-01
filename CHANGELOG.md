@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.1](https://github.com/cujarrett/markdown-tables/compare/v2.10.0...v2.10.1) (2021-10-01)
+
+
+### Bug Fixes
+
+* CI/CD badge ([#89](https://github.com/cujarrett/markdown-tables/issues/89)) ([ef4d38c](https://github.com/cujarrett/markdown-tables/commit/ef4d38c69dc039c031ded647d9f6f3d19330db34))
+
 # [2.10.0](https://github.com/cujarrett/markdown-tables/compare/v2.9.17...v2.10.0) (2021-10-01)
 
 
