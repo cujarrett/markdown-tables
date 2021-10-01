@@ -13,7 +13,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: npm ci
-      - run: npx semantic-release
-        env:
+      - run: npm run lint
+      - run: npm test
+      - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
