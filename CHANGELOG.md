@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.2](https://github.com/cujarrett/markdown-tables/compare/v2.10.1...v2.10.2) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 13.2.0 to 13.2.1 ([#90](https://github.com/cujarrett/markdown-tables/issues/90)) ([eece7f2](https://github.com/cujarrett/markdown-tables/commit/eece7f2d08a06a274c52074c5f7ae5e5927e29b6))
+
 ## [2.10.1](https://github.com/cujarrett/markdown-tables/compare/v2.10.0...v2.10.1) (2021-10-01)
 
 
