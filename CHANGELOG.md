@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.3](https://github.com/cujarrett/markdown-tables/compare/v2.10.2...v2.10.3) (2021-10-14)
+
+
+### Bug Fixes
+
+* **deps:** bump xlsx from 0.17.2 to 0.17.3 ([#92](https://github.com/cujarrett/markdown-tables/issues/92)) ([e0a9c62](https://github.com/cujarrett/markdown-tables/commit/e0a9c6209d2def6d8931b8c3a13a4cac95e4237a))
+
 ## [2.10.2](https://github.com/cujarrett/markdown-tables/compare/v2.10.1...v2.10.2) (2021-10-12)
 
 
