@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.7](https://github.com/cujarrett/markdown-tables/compare/v2.10.6...v2.10.7) (2021-10-22)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump husky from 7.0.2 to 7.0.4 ([#96](https://github.com/cujarrett/markdown-tables/issues/96)) ([b81d0ab](https://github.com/cujarrett/markdown-tables/commit/b81d0ab84c62a8da81d990af2430738236776690))
+
 ## [2.10.6](https://github.com/cujarrett/markdown-tables/compare/v2.10.5...v2.10.6) (2021-10-21)
 
 
