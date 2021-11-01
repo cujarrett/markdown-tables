@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10.13](https://github.com/cujarrett/markdown-tables/compare/v2.10.12...v2.10.13) (2021-11-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/git from 10.0.0 to 10.0.1 ([#102](https://github.com/cujarrett/markdown-tables/issues/102)) ([42dba76](https://github.com/cujarrett/markdown-tables/commit/42dba76795108b2e8cdbb43e034886bdfcf6813f))
+
 ## [2.10.12](https://github.com/cujarrett/markdown-tables/compare/v2.10.11...v2.10.12) (2021-11-01)
 
 
