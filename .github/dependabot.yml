@@ -1,9 +1,10 @@
 version: 2
 updates:
 - package-ecosystem: npm
+  target-branch: "release"
   directory: "/"
   schedule:
-    interval: daily
+    interval: monthly
   commit-message:
       prefix: "fix"
       include: "scope"
