@@ -4,7 +4,7 @@ updates:
   target-branch: "release"
   directory: "/"
   schedule:
-    interval: monthly
-  commit-message:
-      prefix: "fix"
-      include: "scope"
+    interval: "monthly"
+  reviewers:
+    - "cujarrett"
+    
