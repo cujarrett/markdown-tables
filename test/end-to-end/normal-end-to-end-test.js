@@ -1,7 +1,7 @@
-const fs = require("fs")
-const test = require("ava")
-const util = require("util")
-const { markdownTables } = require("../../src/index.js")
+import fs from "fs"
+import test from "ava"
+import util from "util"
+import { markdownTables } from "../../src/index.js"
 
 test("End to End - normal", async (assert) => {
   // eslint-disable-next-line max-len

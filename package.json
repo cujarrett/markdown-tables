@@ -1,15 +1,21 @@
 {
   "name": "markdown-tables",
-  "author": "Matt Jarrett",
   "version": "2.12.1",
+  "license": "MIT",
+  "author": "Matt Jarrett",
   "description": "Helping the world move Excel table data into Markdown tables",
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
     "ci": "npm run lint && npm run test",
     "lint": "eslint .",
     "fix-lint": "eslint . --fix",
-    "test": "nyc ava",
+    "test": "c8 ava",
     "prepare": "husky install"
   },
   "contributors": [
@@ -34,7 +40,6 @@
     "tables",
     "table"
   ],
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cujarrett/markdown-tables/issues"
   },
@@ -53,11 +58,11 @@
     "@semantic-release/npm": "~8.0.0",
     "@semantic-release/release-notes-generator": "~10.0.2",
     "ava": "~3.15.0",
+    "c8": "~7.10.0",
     "commitizen": "~4.2.4",
     "cz-conventional-changelog": "~3.3.0",
     "eslint": "~8.1.0",
-    "husky": "~7.0.2",
-    "nyc": "~15.1.0"
+    "husky": "~7.0.2"
   },
   "husky": {
     "hooks": {

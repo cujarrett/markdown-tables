@@ -1,7 +1,7 @@
-const test = require("ava")
-const fs = require("fs")
-const util = require("util")
-const { markdownTables } = require("../../src/index.js")
+import test from "ava"
+import fs from "fs"
+import util from "util"
+import { markdownTables } from "../../src/index.js"
 
 test("End to End - empty row", async (assert) => {
   const expected = `| Foo | Bar | Baz |

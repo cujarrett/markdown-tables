@@ -1,5 +1,5 @@
-const test = require("ava")
-const { markdownTables } = require("../../src/index.js")
+import test from "ava"
+import { markdownTables } from "../../src/index.js"
 
 test("End to End - no file ", async (assert) => {
   try {

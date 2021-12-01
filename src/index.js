@@ -1,15 +1,15 @@
-const fs = require("fs")
-const util = require("util")
-const xlsx = require("xlsx")
+import fs from "fs"
+import util from "util"
+import xlsx from "xlsx"
 
-module.exports.getInput = async (filePath, sheetNumber = 0) => {
+export const getInput = async (filePath, sheetNumber = 0) => {
   const workbook = xlsx.readFile(filePath)
   const sheetNames = workbook.SheetNames
   const input = workbook.Sheets[sheetNames[sheetNumber]]
   return xlsx.utils.sheet_to_json(input, { raw: true })
 }
 
-module.exports.getColumns = (data) => {
+export const getColumns = (data) => {
   let headers = []
   const columns = []
   let maxRowLength = 0
@@ -33,7 +33,7 @@ module.exports.getColumns = (data) => {
   return columns
 }
 
-module.exports.getColumnWidth = (column) => {
+export const getColumnWidth = (column) => {
   let longest = 0
 
   for (const element of column) {
@@ -49,19 +49,19 @@ module.exports.getColumnWidth = (column) => {
   return columnWidth
 }
 
-module.exports.getAllColumnWidths = (columns) => {
+export const getAllColumnWidths = (columns) => {
   const columnWidths = []
   const numberOfColumns = columns.length
 
   for (let column = 0; column < numberOfColumns; column++) {
-    const longest = this.getColumnWidth(columns[column])
+    const longest = getColumnWidth(columns[column])
     columnWidths.push(longest)
   }
 
   return columnWidths
 }
 
-module.exports.getHeaderLineBreak = (columnWidths) => {
+export const getHeaderLineBreak = (columnWidths) => {
   let output = ""
   for (let width of columnWidths) {
     // Add three to account for padding on both sides of data and leading |
@@ -72,17 +72,17 @@ module.exports.getHeaderLineBreak = (columnWidths) => {
   return output
 }
 
-module.exports.markdownTables = async (input, outputPath) => {
+export const markdownTables = async (input, outputPath) => {
   try {
-    const table = await this.getInput(input)
-    const columns = this.getColumns(table)
-    const columnWidths = this.getAllColumnWidths(columns)
+    const table = await getInput(input)
+    const columns = getColumns(table)
+    const columnWidths = getAllColumnWidths(columns)
     let output = ""
 
     for (let rowIndex = 0; rowIndex < table.length + 1; rowIndex++) {
       const headerRow = rowIndex === 1
       if (headerRow) {
-        output += this.getHeaderLineBreak(columnWidths)
+        output += getHeaderLineBreak(columnWidths)
       }
 
       for (let columnIndex = 0; columnIndex < columns.length; columnIndex++) {
