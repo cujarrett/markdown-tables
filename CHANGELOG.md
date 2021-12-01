@@ -1,4 +1,19 @@
 # Changelog
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+# [3.0.0](https://github.com/cujarrett/markdown-tables/compare/v2.12.1...v3.0.0) (2021-12-01)
+
+
+* BREAKING CHANGE: Require Node.js 12 ([7ef43d2](https://github.com/cujarrett/markdown-tables/commit/7ef43d2b521e3a3447bf9f4b7d6e3a3c9557c82a))
+
+
+### BREAKING CHANGES
+
+* Require Node.js 12
+
+This package is now pure ESM
+
+# Changelog
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
