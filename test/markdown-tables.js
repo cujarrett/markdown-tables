@@ -1,5 +1,6 @@
-const test = require("ava")
-const markdownTables = require("../src/index.js")
+import test from "ava"
+// eslint-disable-next-line max-len
+import { getInput, getColumns, getColumnWidth, getAllColumnWidths, getHeaderLineBreak } from "../src/index.js"
 
 test("Unit - getInput", async (assert) => {
   const expected = [{
@@ -21,7 +22,7 @@ test("Unit - getInput", async (assert) => {
     "Header-2_1": "Gifs make me smile"
   }]
 
-  const actual = await markdownTables.getInput("./test/data/normal-test-input.xlsx")
+  const actual = await getInput("./test/data/normal-test-input.xlsx")
   assert.deepEqual(actual, expected)
 })
 
@@ -37,24 +38,24 @@ test("Unit - getColumns", async (assert) => {
   }]
 
   const expected = [["red", 1, 4], ["blue", 2, 5], ["green", 3, 6]]
-  const actual = markdownTables.getColumns(mockInput)
+  const actual = getColumns(mockInput)
   assert.deepEqual(actual, expected)
 })
 
 test("Unit - getColumnWidth", async (assert) => {
   const expected = 6
-  const actual = markdownTables.getColumnWidth(["a", "bubble", "c"])
+  const actual = getColumnWidth(["a", "bubble", "c"])
   assert.deepEqual(actual, expected)
 })
 
 test("Unit - getAllColumnWidths", async (assert) => {
   const expected = [1, 3]
-  const actual = markdownTables.getAllColumnWidths([["a", "b", "c"], ["d", "two"]])
+  const actual = getAllColumnWidths([["a", "b", "c"], ["d", "two"]])
   assert.deepEqual(actual, expected)
 })
 
 test("Unit - getHeaderLineBreak", async (assert) => {
   const expected = "|---|-------|---|\n"
-  const actual = markdownTables.getHeaderLineBreak([1, 5, 1])
+  const actual = getHeaderLineBreak([1, 5, 1])
   assert.deepEqual(actual, expected)
 })

@@ -32,8 +32,7 @@ npm install markdown-tables --save
 ```
 - You use `markdown-tables` as such
 ```
-const markdownTables = require("markdown-tables")
-...
+import markdownTables from "markdown-tables"
 const markdownTable = markdownTables(xlsxFilePath)
 ```
 
