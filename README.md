@@ -25,18 +25,18 @@ markdown-tables ./path/to/input/file.xlsx ./output.md
 
 ### Use via Node JS project
 
-- Adding markdown-tables to your Node project for use
+Adding markdown-tables to your Node project for use
 
-  ```
-  npm install markdown-tables --save
-  ```
+```
+npm install markdown-tables --save
+```
 
-- You use `markdown-tables` as such
+You use `markdown-tables` as such
 
-  ```
-  import markdownTables from "markdown-tables"
-  const markdownTable = markdownTables(xlsxFilePath)
-  ```
+```
+import markdownTables from "markdown-tables"
+const markdownTable = markdownTables(xlsxFilePath)
+```
 
 ## Want to contribute to Markdown Tables?
 Check out the [CONTRIBUTING](./CONTRIBUTING.md) doc.
