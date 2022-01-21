@@ -3,10 +3,10 @@ import util from "util"
 import xlsx from "xlsx"
 
 export const getInput = async (filePath, sheetNumber = 0) => {
-  const workbook = xlsx.readFile(filePath)
+  const workbook = xlsx.readFile(filePath, { sheetStubs: true })
   const sheetNames = workbook.SheetNames
   const input = workbook.Sheets[sheetNames[sheetNumber]]
-  return xlsx.utils.sheet_to_json(input, { raw: true })
+  return xlsx.utils.sheet_to_json(input, { defval: "" })
 }
 
 export const getColumns = (data) => {

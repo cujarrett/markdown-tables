@@ -25,7 +25,7 @@
     }
   ],
   "bin": {
-    "markdown-tables": "./bin/markdown-tables"
+    "markdown-tables": "./bin/markdown-tables.js"
   },
   "repository": {
     "type": "git",
