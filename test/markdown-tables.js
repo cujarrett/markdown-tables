@@ -3,24 +3,29 @@ import test from "ava"
 import { getInput, getColumns, getColumnWidth, getAllColumnWidths, getHeaderLineBreak } from "../src/index.js"
 
 test("Unit - getInput", async (assert) => {
-  const expected = [{
-    "Header 1": "Some data",
-    "Header-2": "frogs",
-    "“Header 3”": "Joe’s Fish",
-    "‘Header 4’": "Part",
-    "Header-2_1": "Pina"
-  }, {
-    "Header 1": "Oil",
-    "Header-2": "“Yellow Tuna”",
-    "‘Header 4’": "Work, Work, Work",
-    "Header-2_1": "Yellow"
-  }, {
-    "Header 1": 11,
-    "Header-2": "Header-2",
-    "“Header 3”": "Sharks;Birds;People",
-    "‘Header 4’": "Great",
-    "Header-2_1": "Gifs make me smile"
-  }]
+  const expected = [
+    {
+      "Header 1": "Some data",
+      "Header-2": "frogs",
+      "“Header 3”": "Joe’s Fish",
+      "‘Header 4’": "Part",
+      "Header-2_1": "Pina"
+    },
+    {
+      "Header 1": "Oil",
+      "Header-2": "“Yellow Tuna”",
+      "“Header 3”": "",
+      "‘Header 4’": "Work, Work, Work",
+      "Header-2_1": "Yellow"
+    },
+    {
+      "Header 1": 11,
+      "Header-2": "Header-2",
+      "“Header 3”": "Sharks;Birds;People",
+      "‘Header 4’": "Great",
+      "Header-2_1": "Gifs make me smile"
+    }
+  ]
 
   const actual = await getInput("./test/data/normal-test-input.xlsx")
   assert.deepEqual(actual, expected)
