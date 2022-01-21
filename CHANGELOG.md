@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.3](https://github.com/cujarrett/markdown-tables/compare/v3.0.2...v3.0.3) (2022-01-21)
+
+
+### Bug Fixes
+
+* removes coverage from package ([#108](https://github.com/cujarrett/markdown-tables/issues/108)) ([f8ea739](https://github.com/cujarrett/markdown-tables/commit/f8ea73926f796b4f9f292f8220e5c9e3648a569e))
+
 ## [3.0.2](https://github.com/cujarrett/markdown-tables/compare/v3.0.1...v3.0.2) (2022-01-21)
 
 
