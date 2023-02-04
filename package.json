@@ -45,24 +45,24 @@
   },
   "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
-    "xlsx": "~0.17.4"
+    "xlsx": "~0.18.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "~15.0.0",
-    "@commitlint/config-conventional": "~15.0.0",
-    "@semantic-release/changelog": "~6.0.1",
+    "@commitlint/cli": "~17.4.2",
+    "@commitlint/config-conventional": "~17.4.2",
+    "@semantic-release/changelog": "~6.0.2",
     "@semantic-release/commit-analyzer": "~9.0.2",
-    "@semantic-release/exec": "~6.0.2",
+    "@semantic-release/exec": "~6.0.3",
     "@semantic-release/git": "~10.0.1",
-    "@semantic-release/github": "~8.0.2",
-    "@semantic-release/npm": "~8.0.3",
+    "@semantic-release/github": "~8.0.7",
+    "@semantic-release/npm": "~9.0.2",
     "@semantic-release/release-notes-generator": "~10.0.3",
     "ava": "~5.1.1",
-    "c8": "~7.10.0",
-    "commitizen": "~4.2.4",
+    "c8": "~7.12.0",
+    "commitizen": "~4.3.0",
     "cz-conventional-changelog": "~3.3.0",
-    "eslint": "~8.3.0",
-    "husky": "~7.0.4"
+    "eslint": "~8.33.0",
+    "husky": "~8.0.3"
   },
   "husky": {
     "hooks": {
