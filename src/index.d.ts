@@ -61,5 +61,6 @@ declare module 'markdown-tables' {
    * @param options - Options for the conversion
    * @returns Promise resolving to the markdown table as a string
    */
-  export default function markdownTables(input: string, options?: Options): Promise<string | string[]>;
+  export default function markdownTables(input: string, options?: Options & { allSheets?: false }): Promise<string>;
+  export default function markdownTables(input: string, options?: Options & { allSheets: true }): Promise<string[]>;
 }
