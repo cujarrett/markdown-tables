@@ -1,6 +1,6 @@
 import test from "ava"
 // eslint-disable-next-line max-len
-import { getInput, getColumns, getColumnWidth, getAllColumnWidths, getHeaderLineBreak } from "../src/index.js"
+import { getInput, getColumns, getColumnWidth, getAllColumnWidths, getHeaderLineBreak, getNumberOfSheets, getOutputFilePath } from "../src/index.js"
 
 test("Unit - getInput", async (assert) => {
   const expected = [
@@ -28,6 +28,13 @@ test("Unit - getInput", async (assert) => {
   ]
 
   const actual = await getInput("./test/data/normal-test-input.xlsx")
+  assert.deepEqual(actual, expected)
+})
+
+test("Unit - getNumberOfSheets", async (assert) => {
+  const expected = 1
+
+  const actual = await getNumberOfSheets("./test/data/normal-test-input.xlsx")
   assert.deepEqual(actual, expected)
 })
 
@@ -62,5 +69,13 @@ test("Unit - getAllColumnWidths", async (assert) => {
 test("Unit - getHeaderLineBreak", async (assert) => {
   const expected = "|---|-------|---|\n"
   const actual = getHeaderLineBreak([1, 5, 1])
+  assert.deepEqual(actual, expected)
+})
+
+test("Unit - getOutputFilePath", async (assert) => {
+  const expected = "./test/data/multi-sheet-test-output-0.md"
+  let actual = getOutputFilePath(0, "./test/data/multi-sheet-test-output-{number}.md")
+  assert.deepEqual(actual, expected)
+  actual = getOutputFilePath(0, "./test/data/multi-sheet-test-output.md")
   assert.deepEqual(actual, expected)
 })

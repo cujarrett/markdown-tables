@@ -16,10 +16,21 @@ There are two ways to use Markdown Tables. You can use it in a Node JS
 project or you can use it directly via the command line.
 
 ### Use via command line
+
+Install using
 ```
 npm install -g markdown-tables
+```
+
+For converting a file with only a single sheet, you can use:
+```
 markdown-tables ./path/to/input/file.xlsx ./output.md
 ```
+This will convert the first sheet. If you want to output all sheets (each in a different file), use:
+```
+markdown-tables ./path/to/input/file.xlsx --all-sheets ./output-{number}.md
+```
+This will create a file for each sheets and insert the corresponding sheet number.
 
 ![demo](https://user-images.githubusercontent.com/16245634/126058164-048b63f0-7dce-445e-a0c5-8d53956b2bea.gif)
 
@@ -36,6 +47,11 @@ You use `markdown-tables` as such
 ```
 import markdownTables from "markdown-tables"
 const markdownTable = markdownTables(xlsxFilePath)
+```
+
+For getting all sheets and not only the first, use the options parameter:
+```
+const markdownTable = markdownTables(xlsxFilePath, { allSheets=true })
 ```
 
 ## Want to contribute to Markdown Tables?

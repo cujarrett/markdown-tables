@@ -8,6 +8,13 @@ declare module 'markdown-tables' {
   export function getInput(filePath: string, sheetNumber?: number): Promise<Record<string, any>[]>;
 
   /**
+   * Reads and parses an Excel file into JSON data
+   * @param filePath - Path to the Excel file
+   * @returns Promise resolving to the number of sheets in the Excel file
+   */
+  export function getNumberOfSheets(filePath: string): Promise<number>;
+
+  /**
    * Transforms the input data into column-based format
    * @param data - Array of objects representing the sheet data
    * @returns Array of columns, where each column is an array of values
@@ -35,11 +42,24 @@ declare module 'markdown-tables' {
    */
   export function getHeaderLineBreak(columnWidths: number[]): string;
 
+  interface Options {
+    allSheets?: boolean;
+    outputPath?: string;
+  }
+
+  /**
+   * Generates the output file path
+   * @param idx - Index of the sheet
+   * @param outputPath - Path to the output file
+   * @returns The output file path
+   */
+  export function getOutputFilePath(idx: number, outputPath: string): string;
+
   /**
    * Converts Excel data to a markdown table
    * @param input - Path to the input Excel file
-   * @param outputPath - Optional path to write the output markdown table
+   * @param options - Options for the conversion
    * @returns Promise resolving to the markdown table as a string
    */
-  export function markdownTables(input: string, outputPath?: string): Promise<string>;
+  export default function markdownTables(input: string, options?: Options): Promise<string | string[]>;
 }

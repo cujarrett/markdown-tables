@@ -9,6 +9,11 @@ export const getInput = async (filePath, sheetNumber = 0) => {
   return xlsx.utils.sheet_to_json(input, { defval: "" })
 }
 
+export const getNumberOfSheets = (filePath) => {
+  const workbook = xlsx.readFile(filePath, { sheetStubs: true })
+  return workbook.SheetNames.length
+}
+
 export const getColumns = (data) => {
   let headers = []
   const columns = []
@@ -72,9 +77,8 @@ export const getHeaderLineBreak = (columnWidths) => {
   return output
 }
 
-export const markdownTables = async (input, outputPath) => {
-  try {
-    const table = await getInput(input)
+const getOutput = async (input, sheetNumber=0) => {
+  const table = await getInput(input, sheetNumber)
     const columns = getColumns(table)
     const columnWidths = getAllColumnWidths(columns)
     let output = ""
@@ -93,17 +97,44 @@ export const markdownTables = async (input, outputPath) => {
         if (columnIndex === columns.length - 1) {
           output += "|\n"
         }
+    }
+  }
+  return output
+}
+
+export const getOutputFilePath = (idx, outputPath) => {
+  return outputPath.includes("{number}")
+    ? outputPath.replace("{number}", idx)
+    : `${outputPath.split(".").slice(0, -1).join(".")}-${idx}.md`
+}
+
+export const markdownTables = async (input, options) => {
+  try {
+    if (options?.allSheets) {
+      const outputs = []
+      const numberOfSheets = getNumberOfSheets(input)
+      for (let sheetNumber = 0; sheetNumber < numberOfSheets; sheetNumber++) {
+        const output = await getOutput(input, sheetNumber)
+        outputs.push(output)
+        if (options.outputPath) {
+          const outputPath = getOutputFilePath(sheetNumber, options.outputPath)
+          const write = util.promisify(fs.writeFile)
+          await write(outputPath, output)
+          // eslint-disable-next-line no-console
+          console.log(`The file was written to ${outputPath}`)
+        }
       }
+      return outputs
+    } else {
+      const output = await getOutput(input)
+      if (options?.outputPath) {
+        const write = util.promisify(fs.writeFile)
+        await write(options.outputPath, output)
+        // eslint-disable-next-line no-console
+        console.log(`The file was written to ${options.outputPath}`)
+      }
+      return output
     }
-
-    if (outputPath) {
-      const write = util.promisify(fs.writeFile)
-      await write(outputPath, output)
-      // eslint-disable-next-line no-console
-      console.log(`The file was written to ${outputPath}`)
-    }
-
-    return output
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log(error)

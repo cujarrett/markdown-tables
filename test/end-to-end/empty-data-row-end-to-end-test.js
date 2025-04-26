@@ -15,7 +15,7 @@ test("End to End - empty row", async (assert) => {
   assert.is(actual, expected)
 
   // eslint-disable-next-line max-len
-  await markdownTables("./test/data/empty-data-row-test-input.xlsx", "./test/data/empty-data-row-test-output.md")
+  await markdownTables("./test/data/empty-data-row-test-input.xlsx", { outputPath: "./test/data/empty-data-row-test-output.md" })
   const read = util.promisify(fs.readFile)
   actual = await read("./test/data/empty-data-row-test-output.md")
   actual = actual.toString()

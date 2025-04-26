@@ -15,7 +15,7 @@ test("End to End - normal", async (assert) => {
   let actual = await markdownTables("./test/data/normal-test-input.xlsx")
   assert.is(actual, expected, "Converts .xslx to .md table as expected")
 
-  await markdownTables("./test/data/normal-test-input.xlsx", "./test/data/normal-test-output.md")
+  await markdownTables("./test/data/normal-test-input.xlsx", { outputPath: "./test/data/normal-test-output.md" })
   const read = util.promisify(fs.readFile)
   actual = await read("./test/data/normal-test-output.md")
   actual = actual.toString()
