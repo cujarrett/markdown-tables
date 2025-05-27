@@ -24,7 +24,7 @@ export const getColumns = (data) => {
   for (const header of headers) {
     const column = [header]
     for (const row of data) {
-      const value = row[header] || ""
+      const value = (row[header] !== undefined && row[header] !== null) ? row[header] : ""
       column.push(value)
     }
     columns.push(column)
@@ -86,7 +86,10 @@ export const markdownTables = async (input, outputPath) => {
       }
 
       for (let columnIndex = 0; columnIndex < columns.length; columnIndex++) {
-        let element = columns[columnIndex][rowIndex] || ""
+        let element = columns[columnIndex][rowIndex]
+        if (element === undefined || element === null) {
+          element = ""
+        }
         element = element.toString()
         const columnWidth = columnWidths[columnIndex]
         output += `| ${element.padEnd(columnWidth, " ")} `

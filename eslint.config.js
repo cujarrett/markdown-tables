@@ -1,15 +1,15 @@
-{
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
+import globals from "globals"
+
+export default {
+  languageOptions: {
+    globals: {
+      ...globals.browser,
+      ...globals.jest
+    }
   },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
-  },
-  "rules": {
+  ignores: ["coverage/**"],
+  plugins: {},
+  rules: {
     "array-callback-return": [
       "error"
     ],
@@ -23,21 +23,21 @@
     "arrow-spacing": [
       "error",
       {
-        "before": true,
-        "after": true
+        before: true,
+        after: true
       }
     ],
     "brace-style": [
       "error",
       "1tbs",
       {
-        "allowSingleLine": true
+        allowSingleLine: true
       }
     ],
-    "camelcase": [
+    camelcase: [
       "error",
       {
-        "properties": "always"
+        properties: "always"
       }
     ],
     "comma-dangle": [
@@ -47,8 +47,8 @@
     "comma-spacing": [
       "error",
       {
-        "before": false,
-        "after": true
+        before: false,
+        after: true
       }
     ],
     "comma-style": [
@@ -61,7 +61,7 @@
     "eol-last": [
       "error"
     ],
-    "eqeqeq": [
+    eqeqeq: [
       "error"
     ],
     "func-style": [
@@ -75,25 +75,25 @@
     "id-length": [
       "error",
       {
-        "min": 2
+        min: 2
       }
     ],
-    "indent": [
+    indent: [
       "error",
       2
     ],
     "keyword-spacing": [
       "error",
       {
-        "before": true,
-        "after": true
+        before: true,
+        after: true
       }
     ],
     "key-spacing": [
       "error",
       {
-        "beforeColon": false,
-        "afterColon": true
+        beforeColon: false,
+        afterColon: true
       }
     ],
     "linebreak-style": [
@@ -103,14 +103,14 @@
     "max-len": [
       "error",
       {
-        "code": 100
+        code: 100
       }
     ],
     "new-cap": [
       "error",
       {
-        "newIsCap": true,
-        "capIsNew": true
+        newIsCap: true,
+        capIsNew: true
       }
     ],
     "newline-per-chained-call": [
@@ -143,8 +143,8 @@
     "no-multiple-empty-lines": [
       "error",
       {
-        "max": 1,
-        "maxEOF": 1
+        max: 1,
+        maxEOF: 1
       }
     ],
     "no-multi-spaces": [
@@ -217,14 +217,14 @@
       "error",
       "as-needed"
     ],
-    "quotes": [
+    quotes: [
       "error",
       "double"
     ],
-    "radix": [
+    radix: [
       "error"
     ],
-    "semi": [
+    semi: [
       "error",
       "never"
     ],
@@ -235,9 +235,9 @@
     "space-before-function-paren": [
       "error",
       {
-        "named": "never",
-        "anonymous": "always",
-        "asyncArrow": "always"
+        named: "never",
+        anonymous: "always",
+        asyncArrow: "always"
       }
     ],
     "space-in-parens": [
@@ -250,8 +250,8 @@
     "space-unary-ops": [
       "error",
       {
-        "words": true,
-        "nonwords": false
+        words: true,
+        nonwords: false
       }
     ],
     "spaced-comment": [
