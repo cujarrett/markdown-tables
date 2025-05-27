@@ -24,6 +24,12 @@ test("Unit - getInput", async (assert) => {
       "“Header 3”": "Sharks;Birds;People",
       "‘Header 4’": "Great",
       "Header-2_1": "Gifs make me smile"
+    }, {
+      "Header 1": 4,
+      "Header-2": "foo",
+      "Header-2_1": "Baz",
+      "‘Header 4’": "bar",
+      "“Header 3”": "0"
     }
   ]
 

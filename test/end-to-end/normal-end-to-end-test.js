@@ -10,6 +10,7 @@ test("End to End - normal", async (assert) => {
 | Some data | frogs         | Joe’s Fish          | Part             | Pina               |
 | Oil       | “Yellow Tuna” |                     | Work, Work, Work | Yellow             |
 | 11        | Header-2      | Sharks;Birds;People | Great            | Gifs make me smile |
+| 4         | foo           | 0                   | bar              | Baz                |
 `
 
   let actual = await markdownTables("./test/data/normal-test-input.xlsx")
