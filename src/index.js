@@ -2,6 +2,10 @@ import fs from "fs"
 import util from "util"
 import xlsx from "xlsx"
 
+if (typeof xlsx.set_fs === "function") {
+  xlsx.set_fs(fs)
+}
+
 export const getInput = async (filePath, sheetNumber = 0) => {
   const workbook = xlsx.readFile(filePath, { sheetStubs: true })
   const sheetNames = workbook.SheetNames
