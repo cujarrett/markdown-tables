@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm install --production
+      - run: npm install
       - run: npm run lint
       - run: npm test
       - env:
