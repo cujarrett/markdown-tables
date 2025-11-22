@@ -5,67 +5,25 @@
   "author": "Matt Jarrett",
   "description": "Helping the world move Excel table data into Markdown tables",
   "type": "module",
+  "main": "src/index.js",
   "exports": "./src/index.js",
   "engines": {
-    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    "node": ">=16"
   },
-  "main": "src/index.js",
-  "scripts": {
-    "ci": "npm run lint && npm run test",
-    "lint": "eslint .",
-    "fix-lint": "eslint . --fix",
-    "test": "c8 ava",
-    "prepare": "husky install",
-    "audit": "npm audit --audit-level=high"
-  },
-  "contributors": [
-    {
-      "name": "Matt Jarrett",
-      "web": "https://mattjarrett.dev"
-    }
-  ],
   "bin": {
     "markdown-tables": "./bin/markdown-tables.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cujarrett/markdown-tables.git"
-  },
-  "keywords": [
-    "excel",
-    "md",
-    "markdown",
-    "github",
-    "gitlab",
-    "tables",
-    "table"
-  ],
-  "bugs": {
-    "url": "https://github.com/cujarrett/markdown-tables/issues"
-  },
-  "homepage": "https://github.com/cujarrett/markdown-tables#readme",
   "dependencies": {
     "xlsx": "npm:@e965/xlsx@^0.20.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "~20.1.0",
-    "@commitlint/config-conventional": "~20.0.0",
-    "@semantic-release/changelog": "~6.0.3",
-    "@semantic-release/commit-analyzer": "~13.0.1",
-    "@semantic-release/exec": "~7.1.0",
-    "@semantic-release/git": "~10.0.1",
-    "@semantic-release/github": "~12.0.2",
-    "@semantic-release/npm": "~13.1.2",
-    "@semantic-release/release-notes-generator": "~14.1.0",
     "ava": "~6.4.1",
     "c8": "~10.1.3",
-    "eslint": "~9.39.1",
-    "husky": "~9.1.7"
+    "eslint": "~9.39.1"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "config": {}
+  "scripts": {
+    "lint": "eslint .",
+    "fix-lint": "eslint . --fix",
+    "test": "c8 ava"
+  }
 }
